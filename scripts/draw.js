@@ -106,15 +106,12 @@ function handleCount() {
       // Remember, this is now the modified count array:
       // if (count_arr.includes(i)) color_count ++;
 
+      // So this worked, but i think there's still a bug if there are no 0s!
+
       const amt_of_xs = count_arr.filter(n => n === i).length;
-
       color_count += amt_of_xs;
-
       rect(start_len / 4 + i * ivl3, 0, ivl3, canv_height); // well the /4 looks good, but doesn't make a ton of sense to me
-
     }
-
-
   }
 } // end handleCount
 
@@ -122,7 +119,17 @@ function handleCount() {
 
 
 
+function movePtoB() {
+  // if p not beyond b:
 
+
+  // if p beyond b, return false (i.e. DON'T keep calling)
+}
+
+function animate() {
+
+
+}
 
 
 
